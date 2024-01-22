@@ -20,25 +20,7 @@ We created this to match the common $\LaTeX$ format we use in our clique of coll
       name: "Letícia Mattos",
       organization: [IMPA],
       location: [Rio de Janeiro, RJ, Brasil],
-      email: "leticiadmat@gmail.com",
-    ),
-    // (
-    //   name: "Second author",
-    //   organization: [University],
-    //   location: [Brazil],
-    //   email: "email",
-    // ),
-    // (
-    //   name: "Third author",
-    //   organization: [University],
-    //   location: [Brazil],
-    //   email: "email",
-    // ),
-    // (
-    //   name: "Fourth author",
-    //   organization: [University],
-    //   location: [Brazil],
-    //   email: "email",
+      email: "leticiadmat@gmail.com"
     // )
   ),
   abstract: [In this short note we introduce a few tools in discrete Fourier analysis and prove Meshulam and Roth's theorem. These notes are based on a minicourse given by Victor Souza at IMPA, summer 2024.],
@@ -50,8 +32,6 @@ We created this to match the common $\LaTeX$ format we use in our clique of coll
 
 = Lecture 1: Fourier analysis and arithmetic progressions
 <introduction>
-
-
 
 The *Physical space basis* is the set of functions $delta_z: G -> CC$ defined by 
 
@@ -87,6 +67,7 @@ The first step is to show that the characters are indeed orthonormal is to prove
 ```
 
 This compiles to
+
 <img width="550" alt="Screenshot 2024-01-22 at 7 34 40 PM" src="https://github.com/gdahia/typst-ams-fullpage-template/assets/21958842/cc2ad533-ffd4-4a5c-b81f-3ce1e80dcef4">
 
 

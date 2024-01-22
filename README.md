@@ -17,7 +17,8 @@ We created this to match the common $\LaTeX$ format we use in our clique of coll
       email: "leticiadmat@gmail.com"
    ),
   ),
-  abstract: [In this short note we introduce a few tools in discrete Fourier analysis and prove Meshulam and Roth's theorem. These notes are based on a minicourse given by Victor Souza at IMPA, summer 2024.],
+  abstract: [In this short note we introduce a few tools in discrete Fourier analysis and prove Meshulam and Roth's theorem.
+These notes are based on a minicourse given by Victor Souza at IMPA, summer 2024.],
   bibliography-file: "refs.bib",
 )
 
@@ -27,7 +28,8 @@ We created this to match the common $\LaTeX$ format we use in our clique of coll
 = Lecture 1: Fourier analysis and arithmetic progressions
 <introduction>
 
-The goal of this lecture is to introduce the definitions and ideas required to prove #citeauthor[@Me95]'s theorem @Me95, the analogue of the theorem by #citet[@Ro53] for finite fields $FF_q^n$.
+The goal of this lecture is to introduce the definitions and ideas required to prove
+#citeauthor[@Me95]'s theorem @Me95, the analogue of the theorem by #citet[@Ro53] for finite fields $FF_q^n$.
 
 The *Physical space basis* is the set of functions $delta_z: G -> CC$ defined by 
 $ delta_z (x) = cases(1 "if" x in A, , 0 "otherwise".) $

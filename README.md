@@ -47,9 +47,17 @@ for some small $c>0$.
 ```
 
 This compiles to
+![image](https://github.com/gdahia/typst-ams-fullpage-template/assets/13017652/c6f05743-02b2-41e6-ba89-100df8922407)
 
+This example is, in its entirety, in `example.typ`.
 
 ## Known limitations
 
 There is a slight problem with equations, where the subsequent paragraph is not indented.
-To amend this, you can add a `$zws$ #v()` after it.
+To amend this, you can add a `$zws$ #v(-15pt)` after it.
+Moreover, operators and greek letters are by default italicized inside theorems, lemmas and propositions.
+To fix that (in this example, the $\log$ operator), you should add
+```typst
+#let log = $upright(log)$
+```
+to force it to be look like $\LaTeX$.

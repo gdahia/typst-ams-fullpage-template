@@ -4,24 +4,18 @@ We created this to match the common $\LaTeX$ format we use in our clique of coll
 
 ## Example
 ```typst
-#import "template.typ": *
-
-#let log = $upright(log)$
-#let exp = $upright(exp)$
-#let max = $upright(max)$
-#let Gamma = $upright(Gamma)$
+#import "amsart.typ": *
 
 #show: ams-article.with(
   title: "On discrete Fourier analysis 
   and applications",
-  short-title: "On discrete Fourier analysis and applications",
   authors: (
     (
       name: "Letícia Mattos",
       organization: [IMPA],
       location: [Rio de Janeiro, RJ, Brasil],
       email: "leticiadmat@gmail.com"
-    // )
+   ),
   ),
   abstract: [In this short note we introduce a few tools in discrete Fourier analysis and prove Meshulam and Roth's theorem. These notes are based on a minicourse given by Victor Souza at IMPA, summer 2024.],
   bibliography-file: "refs.bib",
@@ -33,8 +27,9 @@ We created this to match the common $\LaTeX$ format we use in our clique of coll
 = Lecture 1: Fourier analysis and arithmetic progressions
 <introduction>
 
-The *Physical space basis* is the set of functions $delta_z: G -> CC$ defined by 
+The goal of this lecture is to introduce the definitions and ideas required to prove #citeauthor[@Me95]'s theorem @Me95, the analogue of the theorem by #citet[@Ro53] for finite fields $FF_q^n$.
 
+The *Physical space basis* is the set of functions $delta_z: G -> CC$ defined by 
 $ delta_z (x) = cases(1 "if" x in A, , 0 "otherwise".) $
 
 #definition[
@@ -57,7 +52,6 @@ The first step is to show that the characters are indeed orthonormal is to prove
   $ EE_(x in G) chi(x) = 0. $
 ]<characters-orthonormal>
 
-
 #proof[
   Let $chi$ be a character of $G$ different from $chi_0$. As $chi eq.not chi_0$, there exists $y in G$ such that $chi(y) eq.not 1$.
   Then, we have
@@ -67,11 +61,9 @@ The first step is to show that the characters are indeed orthonormal is to prove
 ```
 
 This compiles to
+![image](https://github.com/gdahia/typst-ams-fullpage-template/assets/13017652/8138f4d4-1c75-45a7-8c35-fb02e4235947)
 
-<img width="550" alt="Screenshot 2024-01-22 at 7 34 40 PM" src="https://github.com/gdahia/typst-ams-fullpage-template/assets/21958842/cc2ad533-ffd4-4a5c-b81f-3ce1e80dcef4">
-
-
-This example is, in its entirety, in `example.typ`.
+You can find a more detailed example in `example.typ`.
 
 ## Known limitations
 
@@ -82,4 +74,4 @@ To fix that (in this example, the $\log$ operator), you should add
 ```typst
 #let log = $upright(log)$
 ```
-to force it to be look like $\LaTeX$.
+to force it to look like $\LaTeX$.

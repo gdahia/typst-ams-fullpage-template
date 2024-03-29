@@ -204,12 +204,12 @@
 }
 
 #let citeauthor = (citation) => {
-  set cite(form: "author", style: "harvard-cite-them-right")
+  set cite(form: "author", style: "deutsche-gesellschaft-für-psychologie")
   citation
 }
 
 #let citet = (citation) => {
-  set cite(form: "author", style: "harvard-cite-them-right")
+  set cite(form: "author", style: "deutsche-gesellschaft-für-psychologie")
   citation
   " "
   set cite(form: "normal", style: "ieee")
